@@ -1,0 +1,29 @@
+GET http://localhost:5129/games
+
+###
+GET http://localhost:5129/games/10
+
+### 
+POST http://localhost:5129/games
+Content-Type: application/json
+
+{
+  "name": "Grand",
+  "GenreId": 1,
+  "price": 100.00,
+  "releasDate": "2026-10-20"
+}
+
+###
+PUT http://localhost:5129/games/4
+Content-Type: application/json
+
+{
+  "name": "Grand update it",
+  "GenreId": 2,
+  "price": 200.00,
+  "releasDate": "2026-10-20"
+}
+
+###
+DELETE  http://localhost:5129/games/1
